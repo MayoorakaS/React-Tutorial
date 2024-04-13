@@ -1,7 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import Garage from './components/Garage';
 import Header from './components/header';
+import FavouriteColor from './components/states/FavouriteColor';
+import FavouriteCar from './components/states/FavourtieCar';
+import Scooter from './components/states/Scooter';
 
 //function component
 function App() {
@@ -9,9 +11,12 @@ function App() {
     <div className="App">
       <header className="App-header">
          <>
-         <Header/>
+            <FavouriteColor/>
+            <FavouriteCar/>
+            <Scooter/>
+         {/* <Header/>
             Learn React
-          <Garage/>
+          <Garage/> */}
          </>
       </header>
     </div>
